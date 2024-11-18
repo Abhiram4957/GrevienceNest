@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grievance Redressal System</title>
+    <link rel="stylesheet" href='/css/bootstrap.min.css' type="text/css" />
+    <link rel="stylesheet" href='/css/iconslist.css' type="text/css" />
+    <link rel="stylesheet" href='/css/bootstrap-datetimepicker.min.css' type="text/css" />
+    <link rel="stylesheet" href="/css/GRS-Website.css" type="text/css" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href='/CMScss/bootstrap.min.css' media="screen" />
+    <link rel="stylesheet" href='/CMScss/bootstrap-select.min.css' media="screen" />
+    <link rel="stylesheet" href='/CMScss/iconslist.css' type="text/css" />
+    <link rel="stylesheet" href='/css/icons.css' type="text/css" />
+    <link rel="stylesheet" href='/CMScss/bootstrap.min.css' media="screen" />
+    <script src="https://kit.fontawesome.com/aec8ce5a25.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header >
+        <div class="container">
+            <div class="header__area" >
+
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="/img/iare_header_logo.png" alt="logo" title="logo"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h4 class="content__heading mt-4 mb-0">Grievance Redressal System</h4>
+
+    </header>
+
+    <div class="bg-white">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light navsection">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item home">
+                            <a class="nav-link" ><i class="fa fa-home" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item aboutus">
+                            <a class="nav-link" href="about.html" >About Us</a>
+                        </li>
+                        <li class="nav-item registratinprocess">
+                            <a class="nav-link" href="#">Registration Process </a>
+                        </li>
+                        <li class="nav-item contactus">
+                            <a class="nav-link" href="#">Contact us </a>
+                        </li>
+
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <div class=""><a href="login.html" target="_blank" class="login__btn">Login</a></div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    
+
+<div class="content__layout">
+    <div class="container">
+        <div class="content__layer">
+            <div class="content__miniarea">
+                <div class="row" id="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-md-4 mb-2">
+                        <div class="content__minipatch content__minipatch--bgsky">
+                            <span><i class="fa fa-plus content__miniicon" aria-hidden="true"></i></span>
+                            <h3 class="content__minitext" id="rec">Total Received</h3>
+                            <span id="Received">4362</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-md-4 mb-2">
+                        <div class="content__minipatch content__minipatch--bggreen">
+                            <span><i class="fa fa-check content__miniicon" aria-hidden="true"></i></span>
+                            <h3 class="content__minitext" id="Res">Total Resolved</h3>
+                            <h3 class="content__minicount mt-0 mb-0"><span id="Resolved">3578</span></h3>
+                            <input type="hidden" id="reso1" />
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-md-0 mb-2">
+                        <div class="content__minipatch content__minipatch--bgred">
+                            <span><i class="fa fa-trash-o content__miniicon" aria-hidden="true"></i></span>
+                            <h3 class="content__minitext" id="Rej">Total Rejected</h3>
+                            <h3 class="content__minicount mt-0 mb-0"><span id="Rejected">171</span></h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-md-0 mb-0">
+                        <div class="content__minipatch content__minipatch--bgyellow">
+                            <span><i class="fa fa-exclamation-triangle content__miniicon" aria-hidden="true"></i></span>
+                            <h3 class="content__minitext" id="Pen">Total Pending</h3>
+                            <h3 class="content__minicount mt-0 mb-0"> <span id="Pending">513</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="content__complaint">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="content__complaintLeft boxShadow borderRadius">
+                            <h4 class="content__complaintLeftHeading">Grievance/Complaint status</h4>
+                            <hr class="border-top-white mb-4" />
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-4">
+                                    <div class="form-group">
+                                        <input type="text" id="RollNo" class="form-control" placeholder="Enter Roll Number" maxlength="10" />
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-4">
+                                    <div class="form-group">
+                                        <input name="" type="text" id="tokenDetails" class="form-control" placeholder="Enter Token Number" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-4">
+                                    <div class="clearfix hidden-md visible-sm"></div>
+                                    <input type="submit" id="" class="btn btn-success"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="content__complaintRight boxShadow borderRadius bg-white">
+                            <h4 class="content__complaintRightHeading">Register Grievance/Complaint</h4>
+                            <div class="content__complaintRightBtn"><a href="#" target="_blank" class="content__complaintRightBtnLink"><i class="fa fa-mouse-pointer mr-2" aria-hidden="true"></i>Click here</a></div>
+                            <div class="content__complaintRightBtn mt-2"><a href="#" class="content__complaintRightBtnLink"><i class="fa fa-download mr-2" ></i> Download App</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
+                <div class="content__info boxShadow borderRadius bg-white">
+                    <h4 class="content__infoheading">Important Informations</h4>
+                    <div class="content__infolinks" >
+                        <ul>
+                            <li>
+                                <a href="#" style="font-size: large;">Placement Stats 2023-2024</a>
+                            </li>
+                            <li>
+                                <a href="#" style="font-size: large;">Schedule of B.Tech Examination(regular)</a>
+                            </li>
+                            <li>
+                                <a href="#" style="font-size: large;">Schedule of B.Tech Examination(supplymentary)</a>
+                            </li>
+                            <li>
+                                <a href="#" style="font-size: large;">Holidays Schedule of 2024</a>
+                            </li>
+                            <li>
+                                <a href="#" style="font-size: large;">Information to Student on Placements</a>
+                            </li>
+                            <li>
+                                <a href="#" style="font-size: large;">B.Tech II semester results are out</a>
+                            </li>
+                            <li>
+                                <a href="#" style="font-size: large;">B.Tech IV semester results are out</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="content__viewBtn"><a class="btn btn-primary">View All</a></div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-12 mb-lg-4">
+                    <div class="content boxShadow borderRadius">
+                        <h4 class="content__complaintheading">Branch wise complaint</h4>
+                        <div class="p-3 ">
+                            <div class="content__complaintBox">
+                                <div>
+                                    <table class="table">
+                                        <thead>
+                                            <tr><th>Branch</th><th>Pending</th><th>Resolved</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr><td>CSE</td><td>33</td><td>114</td></tr>
+                                            <tr><td>CSE(AI&ML)</td><td>16</td><td>98</td></tr>
+                                            <tr><td>CSE(DS)</td><td>27</td><td>85</td></tr>
+                                            <tr><td>ECE</td><td>42</td><td>154</td></tr>
+                                            <tr><td>CIVIL</td><td>33</td><td>71</td></tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="col-lg-12 mb-4">
+                    <div class="content__details boxShadow borderRadius bg-white">
+                        <h4 class="content__heading">You can Register Complaint</h4>
+                        <div class="content__lineheight"><i class="fa fa-volume-control-phone content__icon" aria-hidden="true"></i>Toll Free No <span class="content__count">1234</span></div>
+                        <div class="content__lineheight"><i class="fa fa-fax content__icon" aria-hidden="true"></i>Fax <span class="content__count">0123 456 789</span> </div>
+                        <div class="content__lineheight"><i class="fa fa-envelope content__icon" aria-hidden="true"></i>Email <span class="content__count">greviencenest@iare.ac.in</span></div>
+                    </div>
+
+                </div>
+
+            </div>
+            <h4 class="content__infoheading mb-3">Others</h4>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="boxShadow borderRadius bg-white p-3">
+                        <a href="https://samvidha.iare.ac.in/">
+
+                            <img src="/img/samvidha.jpg" alt="logo" class="img-fluid" style="height: 60px;" width="100%" />
+                        </a>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="boxShadow borderRadius bg-white  p-3">
+                        <a href="https://akanksha.iare.ac.in/" >
+
+                            <img src="/img/akanksha.jpg" alt="logo" class="img-fluid" style="height:60px;" width="100%" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="boxShadow borderRadius bg-white  p-3">
+                        <a href="https://aksha.iare.ac.in/" >
+
+                            <img src="/img/IARE_Aksha_Logo.png" alt="logo" class="img-fluid" style="height:60px;" width="100%" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="boxShadow borderRadius bg-white  p-3">
+                        <a href="https://buildit.iare.ac.in/">
+
+                            <img src="/img/build_it.png" alt="logo" class="img-fluid" />
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <div>
+            Copy &#64; All rights reserved
+        </div>
+    </footer>
+</body>
+</html>
